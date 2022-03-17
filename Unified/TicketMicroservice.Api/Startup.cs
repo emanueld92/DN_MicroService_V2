@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TicketMicroservice.AppServices;
+using TicketMicroservice.Core.Entity;
+using TicketMicroservice.EntityFramework;
+using TicketMicroservice.EntityFramework.Repository;
 
 namespace TicketMicroservice.Api
 {
@@ -27,6 +32,21 @@ namespace TicketMicroservice.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
+            //Database Connection
+            string connectionStrig = Configuration.GetConnectionString("Default");
+            services.AddDbContext<TicketContext>(
+                options => options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
+
+
+
+            //Services Transient
+
+            services.AddTransient<ITicketAppServices, TicketAppServices>();
+
+            //repository
+
+            services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -35,7 +55,7 @@ namespace TicketMicroservice.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DbContext db)
         {
             if (env.IsDevelopment())
             {
@@ -44,6 +64,7 @@ namespace TicketMicroservice.Api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketMicroservice.Api v1"));
             }
 
+            db.Database.Migrate();
             app.UseHttpsRedirection();
 
             app.UseRouting();
