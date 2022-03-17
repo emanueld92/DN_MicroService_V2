@@ -10,9 +10,9 @@ namespace JourneyMicroservice.EntityFramework.Repository
     public class JourneyRepository:Repository<int,Journey>
     {
 
-        //public JourneyRepository(JourneyContext context): base(context) 
-        //{ 
+        public JourneyRepository(JourneyContext context): base(context) 
+        { 
         
-        //}
+        }
     }
 }

@@ -9,5 +9,10 @@ namespace TicketMicroservice.EntityFramework.Repository
 {
     public class TicketRepository:Repository<int,Ticket>
     {
+
+        public TicketRepository(TicketContext context): base(context)
+        {
+
+        }
     }
 }

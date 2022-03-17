@@ -9,5 +9,10 @@ namespace PassengerMicroservice.EntityFramework.Repository
 {
     public class PassengerRepository: Repository<int, Passenger>
     {
+
+        public PassengerRepository(PassengerContext context) : base(context)
+        {
+
+        }
     }
 }
