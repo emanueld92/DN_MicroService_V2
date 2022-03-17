@@ -1,0 +1,97 @@
+version: '3.4'
+volumes:
+  journey-datafiles:
+  passenger-datafiles:
+  ticket-datafiles:
+
+    #Journey Microservice
+services:
+  JourneyMicroservice:
+    image: ${DOCKER_REGISTRY-}JourneyMicroservice
+    build:
+      context: .
+      dockerfile: JourneyMicroservice.Api/Dockerfile
+    depends_on: 
+            - Journey-database
+    ports:
+          - "5014:80"
+          - "732:443"
+    restart: always
+        
+    environment: 
+          - Journey-database
+          - ASPNETCORE_ENVIRONMENT=Development
+
+    #Passenger  Microservice
+  PassengerMicroservice:
+    image: ${DOCKER_REGISTRY-}PassengerMicroservice
+    build:
+      context: .
+      dockerfile: PassengerMicroservice.Api/Dockerfile
+    depends_on: 
+            - Passenger-database
+    ports:
+          - "5015:80"
+          - "733:443"
+    restart: always
+        
+    environment: 
+          - Passenger-database
+          - ASPNETCORE_ENVIRONMENT=Development
+    #Ticket  Microservice
+  TicketMicroservice:
+    image: ${DOCKER_REGISTRY-}TicketMicroservice
+    build:
+      context: .
+      dockerfile: TicketMicroservice.Api/Dockerfile
+    depends_on: 
+            - Ticket-database
+    ports:
+          - "5016:80"
+          - "734:443"
+    restart: always
+        
+    environment: 
+          - Ticket-database
+          - ASPNETCORE_ENVIRONMENT=Development
+
+#Db Journey
+  Journey-database:
+        image: mysql:8.0.25
+        ports:
+          - "3366:3306"
+        volumes:
+          - journey-datafiles:/var/lib/mysql
+        restart: always
+        environment: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: emanueld92
+          MYSQL_PASSWORD: password
+          MYSQL_DATABASE: journey
+
+#Db Passenger
+  Passenger-database:
+        image: mysql:8.0.25
+        ports:
+          - "3367:3306"
+        volumes:
+          - passenger-datafiles:/var/lib/mysql
+        restart: always
+        environment: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: emanueld92
+          MYSQL_PASSWORD: password
+          MYSQL_DATABASE: passenger
+#Db Ticket
+  Ticket-database:
+        image: mysql:8.0.25
+        ports:
+          - "3368:3306"
+        volumes:
+          - ticket-datafiles:/var/lib/mysql
+        restart: always
+        environment: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: emanueld92
+          MYSQL_PASSWORD: password
+          MYSQL_DATABASE: ticket

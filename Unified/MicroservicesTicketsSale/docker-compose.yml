@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microservicesticketssale:
+    image: ${DOCKER_REGISTRY-}microservicesticketssale
+    build:
+      context: .
+      dockerfile: MicroservicesTicketsSale/Dockerfile
