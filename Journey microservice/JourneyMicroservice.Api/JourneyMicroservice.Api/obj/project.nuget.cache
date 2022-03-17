@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "zNp81kk0A+4IxCO1tXBbC+/7ZjDzc3q/uOu9mE87YrjpxnUKFCYgZCUkrm0kBgZg6YqYqzBjL+axuHd5qqtbRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Journey microservice\\JourneyMicroservice.Api\\JourneyMicroservice.Api\\JourneyMicroservice.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

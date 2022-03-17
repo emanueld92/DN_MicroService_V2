@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>5d3c81da-48e8-4eb0-80ee-4ec92b97d36b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PassengerMicroservice.AppServices\PassengerMicroservice.AppServices.csproj" />
+    <ProjectReference Include="..\PassengerMicroservice.Core\PassengerMicroservice.Core.csproj" />
+    <ProjectReference Include="..\PassengerMicroservice.EntityFramework\PassengerMicroservice.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>

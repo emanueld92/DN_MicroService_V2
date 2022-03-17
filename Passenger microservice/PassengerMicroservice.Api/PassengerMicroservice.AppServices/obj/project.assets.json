@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "PassengerMicroservice.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PassengerMicroservice.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PassengerMicroservice.Core.dll": {}
+        }
+      },
+      "PassengerMicroservice.EntityFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "PassengerMicroservice.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PassengerMicroservice.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PassengerMicroservice.EntityFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PassengerMicroservice.Core/1.0.0": {
+      "type": "project",
+      "path": "../PassengerMicroservice.Core/PassengerMicroservice.Core.csproj",
+      "msbuildProject": "../PassengerMicroservice.Core/PassengerMicroservice.Core.csproj"
+    },
+    "PassengerMicroservice.EntityFramework/1.0.0": {
+      "type": "project",
+      "path": "../PassengerMicroservice.EntityFramework/PassengerMicroservice.EntityFramework.csproj",
+      "msbuildProject": "../PassengerMicroservice.EntityFramework/PassengerMicroservice.EntityFramework.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "PassengerMicroservice.Core >= 1.0.0",
+      "PassengerMicroservice.EntityFramework >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.AppServices\\PassengerMicroservice.AppServices.csproj",
+      "projectName": "PassengerMicroservice.AppServices",
+      "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.AppServices\\PassengerMicroservice.AppServices.csproj",
+      "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.AppServices\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.Core\\PassengerMicroservice.Core.csproj": {
+              "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.Core\\PassengerMicroservice.Core.csproj"
+            },
+            "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.EntityFramework\\PassengerMicroservice.EntityFramework.csproj": {
+              "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Passenger microservice\\PassengerMicroservice.Api\\PassengerMicroservice.EntityFramework\\PassengerMicroservice.EntityFramework.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
