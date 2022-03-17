@@ -1,0 +1,17 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.AppServices.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.AppServices.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.AppServices.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.Core.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\bin\Debug\net5.0\JourneyMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.csproj.CopyComplete
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\refint\JourneyMicroservice.AppServices.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\JourneyMicroservice.AppServices.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices\obj\Debug\net5.0\ref\JourneyMicroservice.AppServices.dll

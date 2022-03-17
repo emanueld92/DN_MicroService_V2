@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TicketMicroservice.AppServices/1.0.0": {
+        "dependencies": {
+          "TicketMicroservice.Core": "1.0.0",
+          "TicketMicroservice.EntityFramework": "1.0.0"
+        },
+        "runtime": {
+          "TicketMicroservice.AppServices.dll": {}
+        }
+      },
+      "TicketMicroservice.Core/1.0.0": {
+        "runtime": {
+          "TicketMicroservice.Core.dll": {}
+        }
+      },
+      "TicketMicroservice.EntityFramework/1.0.0": {
+        "dependencies": {
+          "TicketMicroservice.Core": "1.0.0"
+        },
+        "runtime": {
+          "TicketMicroservice.EntityFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TicketMicroservice.AppServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TicketMicroservice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TicketMicroservice.EntityFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

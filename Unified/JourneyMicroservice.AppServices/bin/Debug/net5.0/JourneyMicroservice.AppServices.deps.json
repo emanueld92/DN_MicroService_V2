@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "JourneyMicroservice.AppServices/1.0.0": {
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0",
+          "JourneyMicroservice.EntityFramework": "1.0.0"
+        },
+        "runtime": {
+          "JourneyMicroservice.AppServices.dll": {}
+        }
+      },
+      "JourneyMicroservice.Core/1.0.0": {
+        "runtime": {
+          "JourneyMicroservice.Core.dll": {}
+        }
+      },
+      "JourneyMicroservice.EntityFramework/1.0.0": {
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0"
+        },
+        "runtime": {
+          "JourneyMicroservice.EntityFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JourneyMicroservice.AppServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JourneyMicroservice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JourneyMicroservice.EntityFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\bin\Debug\net5.0\TicketMicroservice.EntityFramework.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\bin\Debug\net5.0\TicketMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\bin\Debug\net5.0\TicketMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\bin\Debug\net5.0\TicketMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\bin\Debug\net5.0\TicketMicroservice.Core.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.csproj.CopyComplete
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\refint\TicketMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\TicketMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.EntityFramework\obj\Debug\net5.0\ref\TicketMicroservice.EntityFramework.dll

@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PassengerMicroservice.AppServices/1.0.0": {
+        "dependencies": {
+          "PassengerMicroservice.Core": "1.0.0",
+          "PassengerMicroservice.EntityFramework": "1.0.0"
+        },
+        "runtime": {
+          "PassengerMicroservice.AppServices.dll": {}
+        }
+      },
+      "PassengerMicroservice.Core/1.0.0": {
+        "runtime": {
+          "PassengerMicroservice.Core.dll": {}
+        }
+      },
+      "PassengerMicroservice.EntityFramework/1.0.0": {
+        "dependencies": {
+          "PassengerMicroservice.Core": "1.0.0"
+        },
+        "runtime": {
+          "PassengerMicroservice.EntityFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PassengerMicroservice.AppServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PassengerMicroservice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PassengerMicroservice.EntityFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

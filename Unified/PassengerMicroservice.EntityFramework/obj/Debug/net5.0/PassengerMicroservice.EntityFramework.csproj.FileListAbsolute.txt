@@ -1,0 +1,15 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.Core.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.csproj.CopyComplete
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\refint\PassengerMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\ref\PassengerMicroservice.EntityFramework.dll

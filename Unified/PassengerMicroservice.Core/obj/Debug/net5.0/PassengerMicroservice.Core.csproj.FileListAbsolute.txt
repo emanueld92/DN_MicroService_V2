@@ -1,0 +1,12 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\bin\Debug\net5.0\PassengerMicroservice.Core.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\bin\Debug\net5.0\PassengerMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\bin\Debug\net5.0\PassengerMicroservice.Core.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\refint\PassengerMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\PassengerMicroservice.Core.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Core\obj\Debug\net5.0\ref\PassengerMicroservice.Core.dll
