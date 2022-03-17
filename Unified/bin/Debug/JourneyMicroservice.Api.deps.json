@@ -795,7 +795,8 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "JourneyMicroservice.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.15"
+          "Microsoft.EntityFrameworkCore": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15"
         },
         "runtime": {
           "JourneyMicroservice.EntityFramework.dll": {}

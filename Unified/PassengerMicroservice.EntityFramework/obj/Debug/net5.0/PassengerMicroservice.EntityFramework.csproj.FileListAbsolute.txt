@@ -1,4 +1,6 @@
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.runtimeconfig.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.runtimeconfig.dev.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\bin\Debug\net5.0\PassengerMicroservice.Core.dll
@@ -12,4 +14,5 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFra
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\refint\PassengerMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\PassengerMicroservice.EntityFramework.genruntimeconfig.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.EntityFramework\obj\Debug\net5.0\ref\PassengerMicroservice.EntityFramework.dll

@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  JourneyMicroservice:
+  journeymicroservice:
     container_name: JourneyMicroservice.Api
     build:
       labels:
@@ -20,7 +20,7 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
       com.microsoft.visual-studio.project-name: "JourneyMicroservice.Api"
     tty: true
-  PassengerMicroservice:
+  passengermicroservice:
     container_name: PassengerMicroservice.Api
     build:
       labels:
@@ -40,7 +40,7 @@ services:
       com.microsoft.visual-studio.project-name: "PassengerMicroservice.Api"
     tty: true
 
-  TicketMicroservice:
+  ticketmicroservice:
     container_name: TicketMicroservice.Api
     build:
       labels:

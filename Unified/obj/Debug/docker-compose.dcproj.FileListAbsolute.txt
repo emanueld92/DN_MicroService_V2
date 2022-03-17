@@ -15,11 +15,11 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Ap
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Api.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.AppServices.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Core.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
@@ -33,11 +33,11 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.AppServices.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Newtonsoft.Json.Bson.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Newtonsoft.Json.Bson.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\MySqlConnector.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.CodeDom.dll

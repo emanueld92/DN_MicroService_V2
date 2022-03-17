@@ -1,5 +1,5 @@
 services:
-  Journey-database:
+  journey-database:
     environment:
       MYSQL_DATABASE: journey
       MYSQL_PASSWORD: password
@@ -12,7 +12,7 @@ services:
     restart: always
     volumes:
     - journey-datafiles:/var/lib/mysql:rw
-  JourneyMicroservice:
+  journeymicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: JourneyMicroservice.Api/Dockerfile
@@ -22,7 +22,7 @@ services:
       target: base
     container_name: JourneyMicroservice.Api
     depends_on:
-      Journey-database:
+      journey-database:
         condition: service_started
     entrypoint: tail -f /dev/null
     environment:
@@ -32,9 +32,9 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: '1'
       Journey-database: null
       NUGET_FALLBACK_PACKAGES: ''
-    image: JourneyMicroservice:dev
+    image: journeymicroservice:dev
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/JourneyMicroservice.Api.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
@@ -55,7 +55,7 @@ services:
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
     - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
     - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
-  Passenger-database:
+  passenger-database:
     environment:
       MYSQL_DATABASE: passenger
       MYSQL_PASSWORD: password
@@ -68,7 +68,7 @@ services:
     restart: always
     volumes:
     - passenger-datafiles:/var/lib/mysql:rw
-  PassengerMicroservice:
+  passengermicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: PassengerMicroservice.Api/Dockerfile
@@ -78,7 +78,7 @@ services:
       target: base
     container_name: PassengerMicroservice.Api
     depends_on:
-      Passenger-database:
+      passenger-database:
         condition: service_started
     entrypoint: tail -f /dev/null
     environment:
@@ -88,9 +88,9 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: '1'
       NUGET_FALLBACK_PACKAGES: ''
       Passenger-database: null
-    image: PassengerMicroservice:dev
+    image: passengermicroservice:dev
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/PassengerMicroservice.Api.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
@@ -111,7 +111,7 @@ services:
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
     - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
     - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
-  Ticket-database:
+  ticket-database:
     environment:
       MYSQL_DATABASE: ticket
       MYSQL_PASSWORD: password
@@ -124,7 +124,7 @@ services:
     restart: always
     volumes:
     - ticket-datafiles:/var/lib/mysql:rw
-  TicketMicroservice:
+  ticketmicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: TicketMicroservice.Api/Dockerfile
@@ -134,7 +134,7 @@ services:
       target: base
     container_name: TicketMicroservice.Api
     depends_on:
-      Ticket-database:
+      ticket-database:
         condition: service_started
     entrypoint: tail -f /dev/null
     environment:
@@ -144,9 +144,9 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: '1'
       NUGET_FALLBACK_PACKAGES: ''
       Ticket-database: null
-    image: TicketMicroservice:dev
+    image: ticketmicroservice:dev
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/TicketMicroservice.Api.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet

@@ -1,5 +1,5 @@
 services:
-  Journey-database:
+  journey-database:
     environment:
       MYSQL_DATABASE: journey
       MYSQL_PASSWORD: password
@@ -12,18 +12,18 @@ services:
     restart: always
     volumes:
     - journey-datafiles:/var/lib/mysql:rw
-  JourneyMicroservice:
+  journeymicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: JourneyMicroservice.Api/Dockerfile
     depends_on:
-      Journey-database:
+      journey-database:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
       Journey-database: null
-    image: JourneyMicroservice
+    image: journeymicroservice
     ports:
     - published: 5014
       target: 80
@@ -35,7 +35,7 @@ services:
     volumes:
     - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-  Passenger-database:
+  passenger-database:
     environment:
       MYSQL_DATABASE: passenger
       MYSQL_PASSWORD: password
@@ -48,18 +48,18 @@ services:
     restart: always
     volumes:
     - passenger-datafiles:/var/lib/mysql:rw
-  PassengerMicroservice:
+  passengermicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: PassengerMicroservice.Api/Dockerfile
     depends_on:
-      Passenger-database:
+      passenger-database:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
       Passenger-database: null
-    image: PassengerMicroservice
+    image: passengermicroservice
     ports:
     - published: 5015
       target: 80
@@ -71,7 +71,7 @@ services:
     volumes:
     - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-  Ticket-database:
+  ticket-database:
     environment:
       MYSQL_DATABASE: ticket
       MYSQL_PASSWORD: password
@@ -84,18 +84,18 @@ services:
     restart: always
     volumes:
     - ticket-datafiles:/var/lib/mysql:rw
-  TicketMicroservice:
+  ticketmicroservice:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: TicketMicroservice.Api/Dockerfile
     depends_on:
-      Ticket-database:
+      ticket-database:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
       Ticket-database: null
-    image: TicketMicroservice
+    image: ticketmicroservice
     ports:
     - published: 5016
       target: 80

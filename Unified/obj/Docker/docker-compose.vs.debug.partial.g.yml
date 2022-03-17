@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  JourneyMicroservice:
-    image: JourneyMicroservice:dev
+  journeymicroservice:
+    image: journeymicroservice:dev
     container_name: JourneyMicroservice.Api
     build:
       target: base
@@ -28,8 +28,8 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
-  PassengerMicroservice:
-    image: PassengerMicroservice:dev
+  passengermicroservice:
+    image: passengermicroservice:dev
     container_name: PassengerMicroservice.Api
     build:
       target: base
@@ -56,8 +56,8 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
 
-  TicketMicroservice:
-    image: TicketMicroservice:dev
+  ticketmicroservice:
+    image: ticketmicroservice:dev
     container_name: TicketMicroservice.Api
     build:
       target: base
