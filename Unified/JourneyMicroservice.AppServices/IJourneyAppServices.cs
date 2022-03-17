@@ -10,7 +10,7 @@ namespace JourneyMicroservice.AppServices
     public interface IJourneyAppServices
     {
         //Get all
-        Task<IList<Journey>> GetJourneyAllAsync();
+        Task<List<Journey>> GetJourneyAllAsync();
         
         
         //Get ID

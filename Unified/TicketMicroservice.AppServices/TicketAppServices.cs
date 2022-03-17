@@ -1,37 +1,57 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TicketMicroservice.Core.Entity;
+using TicketMicroservice.EntityFramework.Repository;
 
 namespace TicketMicroservice.AppServices
 {
     public class TicketAppServices : ITicketAppServices
     {
-        public Task<int> AddTicketAsync(Ticket ticket)
+        private readonly IRepository<int, Ticket> _repository;
+        public TicketAppServices(IRepository<int, Ticket> repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
         }
 
-        public Task DeleteTicketAsync(int TicketId)
+
+        //Insert
+        public async Task<int> AddTicketAsync(Ticket ticket)
         {
-            throw new NotImplementedException();
+            await _repository.AddAsync(ticket);
+
+            return ticket.IdTicket;
         }
 
-        public Task EditTicketAsync(Ticket ticket)
+        //Delete
+        public async Task DeleteTicketAsync(int ticketId)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(ticketId);
         }
 
-        public Task<IList<Ticket>> GetTicketAllAsync()
+        //Update
+
+        public async Task EditTicketAsync(Ticket ticket)
         {
-            throw new NotImplementedException();
+            await _repository.UpdateAsync(ticket);
+
         }
 
-        public Task<Ticket> GetTicketAsync(int TicketId)
+        //Get ALL
+        public async Task<List<Ticket>> GetTicketAllAsync()
         {
-            throw new NotImplementedException();
+
+            return await _repository.GetAll().ToListAsync();
+        }
+        //Get Id
+        public async Task<Ticket> GetTicketAsync(int ticketId)
+        {
+            return await _repository.GetAsync(ticketId);
+
+
         }
     }
 }

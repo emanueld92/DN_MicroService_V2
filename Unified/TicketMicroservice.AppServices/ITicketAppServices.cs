@@ -11,7 +11,7 @@ namespace TicketMicroservice.AppServices
     {
 
         //Get all
-        Task<IList<Ticket>> GetTicketAllAsync();
+        Task<List<Ticket>> GetTicketAllAsync();
 
 
         //Get ID

@@ -1,4 +1,6 @@
-﻿using PassengerMicroservice.Core.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using PassengerMicroservice.Core.Entity;
+using PassengerMicroservice.EntityFramework.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,29 +11,47 @@ namespace PassengerMicroservice.AppServices
 {
     public class PassengerAppServices : IPassengerAppServices
     {
-        public Task<int> AddPassengerAsync(Passenger passenger)
+        private readonly IRepository<int, Passenger> _repository;
+        public PassengerAppServices(IRepository<int, Passenger> repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
         }
 
-        public Task DeletePassengerAsync(int passengerId)
+
+        //Insert
+        public async Task<int> AddPassengerAsync(Passenger passenger)
         {
-            throw new NotImplementedException();
+            await _repository.AddAsync(passenger);
+
+            return passenger.IdPassenger;
         }
 
-        public Task EditPassengerAsync(Passenger passenger)
+        //Delete
+        public async Task DeletePassengerAsync(int passengerId)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(passengerId);
         }
 
-        public Task<IList<Passenger>> GetPassengerAllAsync()
+        //Update
+
+        public async Task EditPassengerAsync(Passenger passenger)
         {
-            throw new NotImplementedException();
+            await _repository.UpdateAsync(passenger);
+
         }
 
-        public Task<Passenger> GetPassengerAsync(int passengerId)
+        //Get ALL
+        public async Task<List<Passenger>> GetPassengerAllAsync()
         {
-            throw new NotImplementedException();
+
+            return await _repository.GetAll().ToListAsync();
+        }
+        //Get Id
+        public async Task<Passenger> GetPassengerAsync(int passengerId)
+        {
+            return await _repository.GetAsync(passengerId);
+
+
         }
     }
 }

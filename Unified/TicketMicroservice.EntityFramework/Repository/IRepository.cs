@@ -9,7 +9,7 @@ namespace TicketMicroservice.EntityFramework.Repository
     public interface IRepository<TId, TEntity> where TEntity: class, new()
     {
         //GET ALL
-        IList<TEntity> GetAll();
+        IQueryable<TEntity> GetAll();
         //GET ID
         Task<TEntity> GetAsync(TId id);
         //INSERT

@@ -11,7 +11,7 @@ namespace PassengerMicroservice.AppServices
     {
 
         //Get all
-        Task<IList<Passenger>> GetPassengerAllAsync();
+        Task<List<Passenger>> GetPassengerAllAsync();
         //Create
         Task<int> AddPassengerAsync(Passenger passenger);
         //Delete

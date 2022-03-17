@@ -1,6 +1,8 @@
 ﻿using JourneyMicroservice.Core.Entity;
+using JourneyMicroservice.EntityFramework.Repository;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,29 +11,47 @@ namespace JourneyMicroservice.AppServices
 {
     public class JourneyAppServices : IJourneyAppServices
     {
-        public Task<int> AddJourneyAsync(Journey journey)
+        private readonly IRepository<int, Journey> _repository;
+        public JourneyAppServices(IRepository<int, Journey> repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
         }
 
-        public Task DeleteJourneyAsync(int JourneyId)
+
+        //Insert
+        public async Task<int> AddJourneyAsync(Journey journey)
         {
-            throw new NotImplementedException();
+            await _repository.AddAsync(journey);
+
+            return journey.IdJourney;
         }
 
-        public Task EditJourneyAsync(Journey journey)
+        //Delete
+        public async Task DeleteJourneyAsync(int journeyId)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(journeyId);
         }
 
-        public Task<IList<Journey>> GetJourneyAllAsync()
+        //Update
+
+        public async Task EditJourneyAsync(Journey journey)
         {
-            throw new NotImplementedException();
+            await _repository.UpdateAsync(journey);
+
         }
 
-        public Task<Journey> GetJourneyAsync(int JourneyId)
+        //Get ALL
+        public async Task<List<Journey>> GetJourneyAllAsync()
         {
-            throw new NotImplementedException();
+
+            return await _repository.GetAll().ToListAsync();
+        }
+        //Get Id
+        public async Task<Journey> GetJourneyAsync(int journeyId)
+        {
+            return await _repository.GetAsync(journeyId);
+
+
         }
     }
 }
