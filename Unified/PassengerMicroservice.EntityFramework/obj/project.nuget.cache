@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "27Bz6U0owU87FnpQG1MKvbnFyqo7n+Npzw0i63JGOajXjvdtnYKTDDkd6WwMKeXJo5dK11LLyi+C7t/OUCz98w==",
+  "dgSpecHash": "Ch1pevtslz3O7nskEaSqP76vB3/O3P16vv2yrwLbR9LqwjgbbivfHNhWCkqZWg32otmvYy2Rzz4Qe7VGWnKObw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\PassengerMicroservice.EntityFramework\\PassengerMicroservice.EntityFramework.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,8 @@
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.4\\pomelo.entityframeworkcore.mysql.5.0.4.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

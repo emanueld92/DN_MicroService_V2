@@ -38,12 +38,7 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Newtonsoft.Json.Bson.
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\MySqlConnector.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.CodeDom.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Data.SqlClient.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Api.pdb

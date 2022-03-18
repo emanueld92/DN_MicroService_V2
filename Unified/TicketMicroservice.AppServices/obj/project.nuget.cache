@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rLuE5WBQFDLsXkuEw6TNEW2/Ti5ttgdiQPwoL31OtiAkhEJug0mpokekLopxDcz+vpfJtmGivJSb0yQJ5cP14g==",
+  "dgSpecHash": "Sbr8gqyAn3XnkJuqzDEOD7Ja1GVTpMYtN1hLAjuzw0zqYNBJLe0rryh1S2BAQFdh3Js/vCnTgaBv602/4GRh7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,8 @@
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.4\\pomelo.entityframeworkcore.mysql.5.0.4.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

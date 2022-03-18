@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\JourneyMicroservice.AppServices\JourneyMicroservice.AppServices.csproj" />
     <ProjectReference Include="..\JourneyMicroservice.Core\JourneyMicroservice.Core.csproj" />
     <ProjectReference Include="..\JourneyMicroservice.EntityFramework\JourneyMicroservice.EntityFramework.csproj" />

@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v5.0": {
       "PassengerMicroservice.AppServices/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.15",
           "PassengerMicroservice.Core": "1.0.0",
           "PassengerMicroservice.EntityFramework": "1.0.0"
         },
@@ -15,6 +18,15 @@
           "PassengerMicroservice.AppServices.dll": {}
         }
       },
+      "Humanizer.Core/2.8.26": {
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/5.0.15": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.15",
@@ -42,6 +54,19 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/5.0.15": {},
+      "Microsoft.EntityFrameworkCore.Design/5.0.15": {
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "5.0.15.0",
+            "fileVersion": "5.0.1522.10812"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.15": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.15",
@@ -52,6 +77,11 @@
             "assemblyVersion": "5.0.15.0",
             "fileVersion": "5.0.1522.10812"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/5.0.15": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "5.0.15"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
@@ -152,6 +182,27 @@
           }
         }
       },
+      "MySqlConnector/1.3.13": {
+        "runtime": {
+          "lib/net5.0/MySqlConnector.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.3.13.0"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/5.0.4": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "MySqlConnector": "1.3.13"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "5.0.4.0",
+            "fileVersion": "5.0.4.0"
+          }
+        }
+      },
       "System.Collections.Immutable/5.0.0": {},
       "System.ComponentModel.Annotations/5.0.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.1": {
@@ -171,7 +222,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.15",
-          "PassengerMicroservice.Core": "1.0.0"
+          "PassengerMicroservice.Core": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.4"
         },
         "runtime": {
           "PassengerMicroservice.EntityFramework.dll": {}
@@ -184,6 +236,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Humanizer.Core/2.8.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "path": "humanizer.core/2.8.26",
+      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/5.0.15": {
       "type": "package",
@@ -206,12 +272,26 @@
       "path": "microsoft.entityframeworkcore.analyzers/5.0.15",
       "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.15.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Design/5.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L89wVW5GSavWZV+j3+ydvEczziHBYMOX3dIHBIsHguuAhSBxIBWGwKtXvdb2JvoM2eJU396ZVIcg+DCObebcrA==",
+      "path": "microsoft.entityframeworkcore.design/5.0.15",
+      "hashPath": "microsoft.entityframeworkcore.design.5.0.15.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/5.0.15": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-zE8zWanIxN2p9VyhtD6wFZrLEwqxJgBPzWJqF3r+ojzQtjMo+F9nKh36LpRUU8oeqHNXc7gZMPuGeGeYLCtV2g==",
       "path": "microsoft.entityframeworkcore.relational/5.0.15",
       "hashPath": "microsoft.entityframeworkcore.relational.5.0.15.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/5.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BDJ/l69JeZNJtd+dqfnD6UxC5CXnqsZ4Da0Uw5fKQ4iqvoqnYsTbviA/OvP+sOsNJhZdVzS/wGqrER4bgyfDSg==",
+      "path": "microsoft.entityframeworkcore.tools/5.0.15",
+      "hashPath": "microsoft.entityframeworkcore.tools.5.0.15.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
       "type": "package",
@@ -275,6 +355,20 @@
       "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    },
+    "MySqlConnector/1.3.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o1qsijkFGvTslpuQdcJwG6IvdNOiVL7fRqvFZ0LTg04kfz+IzzwSWj4YwgTe0q0C3p0WqgaDXui5OEx6qgwebg==",
+      "path": "mysqlconnector/1.3.13",
+      "hashPath": "mysqlconnector.1.3.13.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/5.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R5LDFDaCO/Si09tEWbgQoYwLsCYPG3Qm6Q7zICFDF8zZ7gr64fgyBLBtOxhGtJBmbpImFVI6GfcYf2JAROGaZA==",
+      "path": "pomelo.entityframeworkcore.mysql/5.0.4",
+      "hashPath": "pomelo.entityframeworkcore.mysql.5.0.4.nupkg.sha512"
     },
     "System.Collections.Immutable/5.0.0": {
       "type": "package",

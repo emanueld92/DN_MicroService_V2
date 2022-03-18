@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PassengerMicroservice.AppServices\PassengerMicroservice.AppServices.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.Core\PassengerMicroservice.Core.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.EntityFramework\PassengerMicroservice.EntityFramework.csproj" />

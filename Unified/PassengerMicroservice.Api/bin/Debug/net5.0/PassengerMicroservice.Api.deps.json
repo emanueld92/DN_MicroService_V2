@@ -608,6 +608,8 @@
       },
       "PassengerMicroservice.AppServices/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15",
           "PassengerMicroservice.Core": "1.0.0",
           "PassengerMicroservice.EntityFramework": "1.0.0"
         },
@@ -630,7 +632,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.15",
-          "PassengerMicroservice.Core": "1.0.0"
+          "PassengerMicroservice.Core": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.4"
         },
         "runtime": {
           "PassengerMicroservice.EntityFramework.dll": {}
