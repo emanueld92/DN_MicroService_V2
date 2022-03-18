@@ -12,9 +12,9 @@ namespace JourneyMicroservice.Core.Entity
         [Key]
         public int IdJourney { get; set; }
 
-        public int DestinationId { get; set; }
+        public Destination Destination { get; set; }
 
-        public int OriginId { get; set; }
+        public Origin Origin { get; set; }
 
         public DateTime Departure { get; set; }
 

@@ -17,6 +17,21 @@ namespace JourneyMicroservice.EntityFramework.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.15");
 
+            modelBuilder.Entity("JourneyMicroservice.Core.Entity.Destination", b =>
+                {
+                    b.Property<int>("DestinationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("DestinationId");
+
+                    b.ToTable("Destinations");
+                });
+
             modelBuilder.Entity("JourneyMicroservice.Core.Entity.Journey", b =>
                 {
                     b.Property<int>("IdJourney")
@@ -29,15 +44,59 @@ namespace JourneyMicroservice.EntityFramework.Migrations
                     b.Property<DateTime>("Departure")
                         .HasColumnType("datetime");
 
-                    b.Property<int>("DestinationId")
+                    b.Property<int?>("DestinationId")
                         .HasColumnType("int");
 
-                    b.Property<int>("OriginId")
+                    b.Property<int?>("OriginId")
                         .HasColumnType("int");
 
                     b.HasKey("IdJourney");
 
+                    b.HasIndex("DestinationId");
+
+                    b.HasIndex("OriginId");
+
                     b.ToTable("Journeys");
+                });
+
+            modelBuilder.Entity("JourneyMicroservice.Core.Entity.Origin", b =>
+                {
+                    b.Property<int>("OriginId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("OriginId");
+
+                    b.ToTable("Origins");
+                });
+
+            modelBuilder.Entity("JourneyMicroservice.Core.Entity.Journey", b =>
+                {
+                    b.HasOne("JourneyMicroservice.Core.Entity.Destination", "Destination")
+                        .WithMany("Journeys")
+                        .HasForeignKey("DestinationId");
+
+                    b.HasOne("JourneyMicroservice.Core.Entity.Origin", "Origin")
+                        .WithMany("Journeys")
+                        .HasForeignKey("OriginId");
+
+                    b.Navigation("Destination");
+
+                    b.Navigation("Origin");
+                });
+
+            modelBuilder.Entity("JourneyMicroservice.Core.Entity.Destination", b =>
+                {
+                    b.Navigation("Journeys");
+                });
+
+            modelBuilder.Entity("JourneyMicroservice.Core.Entity.Origin", b =>
+                {
+                    b.Navigation("Journeys");
                 });
 #pragma warning restore 612, 618
         }

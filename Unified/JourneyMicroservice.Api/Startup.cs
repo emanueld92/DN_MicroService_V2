@@ -1,3 +1,5 @@
+
+
 using JourneyMicroservice.AppServices;
 using JourneyMicroservice.Core.Entity;
 using JourneyMicroservice.EntityFramework;
@@ -41,9 +43,12 @@ namespace JourneyMicroservice.Api
             //Services Transient
 
             services.AddTransient<IJourneyAppServices, JourneyAppServices>();
-
+            services.AddTransient<IDestinationAppServices, DestinationAppServices>();
+            services.AddTransient<IOriginAppServices,OriginAppServices>();
             //Repository
             services.AddTransient<IRepository<int, Journey>, JourneyRepository>();
+            services.AddTransient<IRepository<int, Origin>, OriginRepository>();
+            services.AddTransient<IRepository<int, Destination>, DestinationRepository>();
 
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
