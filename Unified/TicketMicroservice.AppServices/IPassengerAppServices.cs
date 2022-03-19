@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TicketMicroservice.AppServices
 {
-    public interface IJourneyAppServices
+    public interface IPassengerAppServices
     {
-
-        Task<JourneyMicroservice.Core.Entity.Journey> GetJourney(int id);
+        Task<PassengerMicroservice.Core.Entity.Passenger> GetJourney(int id);
     }
 }

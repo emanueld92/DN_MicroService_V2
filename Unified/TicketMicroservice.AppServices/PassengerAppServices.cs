@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TicketMicroservice.AppServices
 {
-    public class PassengerAppServices
+    public class PassengerAppServices: IPassengerAppServices
     {
         private readonly IHttpClientFactory _clientFactory;
         public PassengerAppServices(IHttpClientFactory clientFactory)
@@ -20,9 +20,9 @@ namespace TicketMicroservice.AppServices
         {
 
 
-            HttpClient client = _clientFactory.CreateClient();
+            HttpClient client = _clientFactory.CreateClient("passenger");
             HttpResponseMessage response;
-            String url = " https://localhost:733/api/Passenger/";
+            String url = "Passenger";
 
             response = await client.GetAsync($"{url}/{id}");
             PassengerMicroservice.Core.Entity.Passenger passenger;

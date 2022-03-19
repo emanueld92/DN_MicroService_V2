@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TicketMicroservice.AppServices
 {
-    public class JourneyAppServices
+    public class JourneyAppServices: IJourneyAppServices
     {
         private readonly IHttpClientFactory _clientFactory;
         public JourneyAppServices(IHttpClientFactory clientFactory)
@@ -19,9 +19,9 @@ namespace TicketMicroservice.AppServices
         {
 
 
-            HttpClient client = _clientFactory.CreateClient();
+            HttpClient client = _clientFactory.CreateClient("journey");
             HttpResponseMessage response;
-            String url = "https://localhost:733/api/Journey/";
+            String url = "Journey";
 
             response = await client.GetAsync($"{url}/{id}");
             JourneyMicroservice.Core.Entity.Journey journey;

@@ -14,7 +14,14 @@ namespace TicketMicroservice.Api.Controllers
     {
 
         private readonly ITicketAppServices _ticketAppServices;
-        public TicketController(ITicketAppServices ticketAppServices) => _ticketAppServices = ticketAppServices;
+        private readonly IPassengerAppServices _passengerAppServices;
+        private readonly IJourneyAppServices _journeyAppServices;
+        public TicketController(ITicketAppServices ticketAppServices, IPassengerAppServices passengerAppServices,IJourneyAppServices journeyAppServices)
+        {
+            _ticketAppServices = ticketAppServices;
+            _passengerAppServices = passengerAppServices;
+            _journeyAppServices = journeyAppServices;
+        }
 
         // GET: api/<TicketController>
         [HttpGet]
@@ -34,6 +41,7 @@ namespace TicketMicroservice.Api.Controllers
         [HttpPost]
         public async void Post([FromBody] Ticket value)
         {
+
             await _ticketAppServices.AddTicketAsync(value);
         }
 

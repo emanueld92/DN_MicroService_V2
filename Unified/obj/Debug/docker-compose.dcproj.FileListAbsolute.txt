@@ -3,6 +3,8 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.A
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.runtimeconfig.dev.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Development.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Production.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Staging.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.exe
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.deps.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.runtimeconfig.json
@@ -15,6 +17,7 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Ap
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Api.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.EntityFramework.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -22,8 +25,13 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCor
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.AppServices.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Core.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Hosting.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.AspNetCore.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.OpenApi.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
@@ -38,6 +46,7 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Newtonsoft.Json.Bson.
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Logging.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\MySqlConnector.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.Api.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.Api.pdb
@@ -54,12 +63,3 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Co
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CopyComplete
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Production.json
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Staging.json
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Sinks.Console.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Hosting.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.AspNetCore.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Settings.Configuration.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Logging.dll

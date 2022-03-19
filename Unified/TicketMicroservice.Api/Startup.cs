@@ -42,7 +42,20 @@ namespace TicketMicroservice.Api
             //Services Transient
 
             services.AddTransient<ITicketAppServices, TicketAppServices>();
+            services.AddTransient<IJourneyAppServices, JourneyAppServices>();
+            services.AddTransient<IPassengerAppServices, PassengerAppServices>();
 
+            services.AddHttpClient("passenger", client =>
+            {
+
+                client.BaseAddress = new Uri((Configuration["AppSettings:JourneyUrlBase"]));
+            });
+
+            services.AddHttpClient("journey", client =>
+            {
+
+                client.BaseAddress = new Uri((Configuration["AppSettings:PassengerUrlBase"]));
+            });
             //repository
 
             services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
