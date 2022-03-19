@@ -1048,6 +1048,9 @@
         }
       },
       "TicketMicroservice.Core/1.0.0": {
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0"
+        },
         "runtime": {
           "TicketMicroservice.Core.dll": {}
         }

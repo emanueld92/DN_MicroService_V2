@@ -2226,6 +2226,9 @@
       "TicketMicroservice.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TicketMicroservice.Core.dll": {}
         },

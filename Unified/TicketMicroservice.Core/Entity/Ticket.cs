@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JourneyMicroservice.Core.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;

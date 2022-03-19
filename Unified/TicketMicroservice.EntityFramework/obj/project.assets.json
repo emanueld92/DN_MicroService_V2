@@ -256,9 +256,22 @@
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
+      "JourneyMicroservice.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/JourneyMicroservice.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JourneyMicroservice.Core.dll": {}
+        }
+      },
       "TicketMicroservice.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TicketMicroservice.Core.dll": {}
         },
@@ -827,6 +840,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "JourneyMicroservice.Core/1.0.0": {
+      "type": "project",
+      "path": "../JourneyMicroservice.Core/JourneyMicroservice.Core.csproj",
+      "msbuildProject": "../JourneyMicroservice.Core/JourneyMicroservice.Core.csproj"
     },
     "TicketMicroservice.Core/1.0.0": {
       "type": "project",

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "TicketMicroservice.Core/1.0.0": {
+        "dependencies": {
+          "JourneyMicroservice.Core": "1.0.0"
+        },
         "runtime": {
           "TicketMicroservice.Core.dll": {}
+        }
+      },
+      "JourneyMicroservice.Core/1.0.0": {
+        "runtime": {
+          "JourneyMicroservice.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "TicketMicroservice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JourneyMicroservice.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
