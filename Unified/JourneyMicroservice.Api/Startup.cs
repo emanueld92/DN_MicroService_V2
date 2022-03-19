@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,11 @@ namespace JourneyMicroservice.Api
             services.AddTransient<IRepository<int, Origin>, OriginRepository>();
             services.AddTransient<IRepository<int, Destination>, DestinationRepository>();
 
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
             {
@@ -63,9 +69,15 @@ namespace JourneyMicroservice.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JourneyMicroservice.Api v1"));
             }
+            else
+            {
+                app.UseExceptionHandler("/error");
+
+            }
+            app.UseSerilogRequestLogging();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JourneyMicroservice.Api v1"));
             //Migrates 
             db.Database.Migrate();
 

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UAq1JeAUvTUcRshY1dpODJ9fRHCPSjp1QUysvYKNT1NekXsVDIvnQeujfSDOvFMMlSwg2irF1HzlAIs+9GX6Mw==",
+  "dgSpecHash": "ljBfImL8IXzYZ8Eiza3xNvsa4fjkHvrjmzYleKv2zDHwgrgM/rYjiOtr9oag1EsneTWIP4h7dHsqFX/H3mKtiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emanueld92\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.15\\microsoft.aspnetcore.jsonpatch.5.0.15.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.15\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.15.nupkg.sha512",
@@ -34,6 +35,7 @@
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

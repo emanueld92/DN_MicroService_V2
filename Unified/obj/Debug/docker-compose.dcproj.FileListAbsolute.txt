@@ -54,3 +54,12 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Co
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Production.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\appsettings.Staging.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Sinks.Console.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Hosting.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.AspNetCore.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Settings.Configuration.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Serilog.Extensions.Logging.dll

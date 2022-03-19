@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using TicketMicroservice.Core.Entity;
@@ -50,7 +51,6 @@ namespace TicketMicroservice.AppServices
         public async Task<Ticket> GetTicketAsync(int ticketId)
         {
             return await _repository.GetAsync(ticketId);
-
 
         }
     }

@@ -1,0 +1,386 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\TicketMicroservice.Test\\TicketMicroservice.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\TicketMicroservice.Test\\TicketMicroservice.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\TicketMicroservice.Test\\TicketMicroservice.Test.csproj",
+        "projectName": "TicketMicroservice.Test",
+        "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\TicketMicroservice.Test\\TicketMicroservice.Test.csproj",
+        "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\TicketMicroservice.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj",
+        "projectName": "TicketMicroservice.Api",
+        "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\TicketMicroservice.Api.csproj",
+        "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj"
+              },
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj"
+              },
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj",
+        "projectName": "TicketMicroservice.AppServices",
+        "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj",
+        "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj"
+              },
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj",
+        "projectName": "TicketMicroservice.Core",
+        "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj",
+        "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj",
+        "projectName": "TicketMicroservice.EntityFramework",
+        "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\TicketMicroservice.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\Emanueld92\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.EntityFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanueld92\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj": {
+                "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.Core\\TicketMicroservice.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

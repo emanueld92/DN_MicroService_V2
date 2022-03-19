@@ -13,6 +13,9 @@ namespace TicketMicroservice.EntityFramework.Repository
         public TicketRepository(TicketContext context): base(context)
         {
 
+
         }
+
+
     }
 }
