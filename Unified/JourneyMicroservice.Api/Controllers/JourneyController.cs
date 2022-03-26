@@ -1,7 +1,10 @@
-﻿using JourneyMicroservice.AppServices;
+﻿using JourneyMicroservice.Api.Models;
+using JourneyMicroservice.AppServices;
 using JourneyMicroservice.Core.Entity;
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -14,19 +17,27 @@ namespace JourneyMicroservice.Api.Controllers
     public class JourneyController : ControllerBase
     {
         private readonly IJourneyAppServices _journeyAppService;
+        private readonly ILogger _logger;
+        public JourneyController(IJourneyAppServices jounerAppService, ILogger<JourneyController> logger)
+        {
 
-        public JourneyController(IJourneyAppServices jounerAppService)=> _journeyAppService= jounerAppService;
+            _journeyAppService= jounerAppService;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
             // GET: api/<JourneyController>
         [HttpGet]
         public async Task<IEnumerable<Journey>> Get()
         {
-            return await _journeyAppService.GetJourneyAllAsync();
+             var journeys =await _journeyAppService.GetJourneyAllAsync();
+            _logger.LogInformation("Total journeys: " + journeys?.Count);
+            return journeys;
         }
 
         // GET api/<JourneyController>/5
         [HttpGet("{id}")]
         public async Task<Journey> Get(int id)
         {
+
             return await _journeyAppService.GetJourneyAsync(id);
         }
 

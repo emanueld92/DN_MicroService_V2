@@ -37,25 +37,7 @@ namespace TicketMicroservice.AppServices
                 throw new Exception(response.ReasonPhrase);
             }
 
-            //var journeyId = ticket.JourneyId;
 
-            //var ticket = await _repository.GetAsync(ticketId);
-            //HttpClient passenger = new HttpClient();
-            //HttpClient journey = new HttpClient();
-            //var passengerId = ticket.PassengerId;
-
-            //HttpResponseMessage responsePassenger;
-            //HttpResponseMessage responseJourney;
-
-
-
-            //String urlPassenger = $" https://localhost:733/api/Passenger/{passengerId}";
-            //responsePassenger = await passenger.GetAsync(urlPassenger);
-            //responseJourney = await Journey.GetAsync(urljourney);
-
-            //var source = ticket;
-            //source.JourneyId = responseJourney;
-            //    soruce.Passenger = responseJourney;
 
 
             

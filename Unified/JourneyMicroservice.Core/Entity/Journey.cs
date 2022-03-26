@@ -20,5 +20,6 @@ namespace JourneyMicroservice.Core.Entity
 
         public DateTime Arrival { get; set; }
 
+
     }
 }

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using TicketMicroservice.Api.Models;
 using TicketMicroservice.AppServices;
 using TicketMicroservice.Core.Entity;
 
@@ -16,18 +19,22 @@ namespace TicketMicroservice.Api.Controllers
         private readonly ITicketAppServices _ticketAppServices;
         private readonly IPassengerAppServices _passengerAppServices;
         private readonly IJourneyAppServices _journeyAppServices;
-        public TicketController(ITicketAppServices ticketAppServices, IPassengerAppServices passengerAppServices,IJourneyAppServices journeyAppServices)
+        private readonly ILogger _logger;
+        public TicketController(ILogger<TicketController> logger, ITicketAppServices ticketAppServices, IPassengerAppServices passengerAppServices,IJourneyAppServices journeyAppServices)
         {
             _ticketAppServices = ticketAppServices;
             _passengerAppServices = passengerAppServices;
             _journeyAppServices = journeyAppServices;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         // GET: api/<TicketController>
         [HttpGet]
         public async Task<IEnumerable<Ticket>> GetAsync()
         {
-            return await _ticketAppServices.GetTicketAllAsync();
+            var tickets  = await _ticketAppServices.GetTicketAllAsync();
+            _logger.LogInformation("Total tickets: " + tickets?.Count);
+            return tickets;
         }
 
         // GET api/<TicketController>/5
@@ -39,19 +46,65 @@ namespace TicketMicroservice.Api.Controllers
 
         // POST api/<TicketController>
         [HttpPost]
-        public async void Post([FromBody] Ticket value)
+        public async void Post([FromBody] TicketViewModel value)
         {
+            
 
-            await _ticketAppServices.AddTicketAsync(value);
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+            var passenger = await _passengerAppServices.GetPassenger(value.PassengerId);
+            if (passenger == null)
+            {
+                throw new Exception("This passenger is not exist");
+            }
+
+            var journey = await _journeyAppServices.GetJourney(value.JourneyId);
+
+            if (journey == null)
+            {
+                throw new Exception("This passenger is not exist");
+            }
+
+            Ticket ticket = new Ticket
+            {
+                JourneyId = value.JourneyId,
+                PassengerId=value.PassengerId,
+                Seat=value.Seat
+                
+            };
+            await _ticketAppServices.AddTicketAsync(ticket);
         }
 
         // PUT api/<TicketController>/5
         [HttpPut("{id}")]
-        public async void Put(int id, [FromBody] Ticket value)
+        public async void Put(int id, [FromBody] TicketViewModel value)
         {
 
-            value.IdTicket = id;
-            await _ticketAppServices.EditTicketAsync(value);
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+            var passenger = await _passengerAppServices.GetPassenger(value.PassengerId);
+            if (passenger == null)
+            {
+                throw new Exception("unrecorded passenger error");
+            }
+            var journey = await _journeyAppServices.GetJourney(value.JourneyId);
+
+            if (journey == null)
+            {
+                throw new Exception("unregistered destination");
+            }
+            Ticket ticket = new Ticket
+            {
+                IdTicket=id,
+                PassengerId=value.PassengerId,
+                JourneyId=value.JourneyId,
+                Seat=value.Seat
+            };
+            await _ticketAppServices.EditTicketAsync(ticket);
         }
 
         // DELETE api/<TicketController>/5

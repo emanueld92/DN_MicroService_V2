@@ -1,0 +1,128 @@
+services:
+  journey-database:
+    environment:
+      MYSQL_DATABASE: journey
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: emanueld92
+    image: mysql:8.0.25
+    ports:
+    - published: 3366
+      target: 3306
+    restart: always
+    volumes:
+    - journey-datafiles:/var/lib/mysql:rw
+  journeymicroservice:
+    build:
+      context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
+      dockerfile: JourneyMicroservice.Api/Dockerfile
+    depends_on:
+      journey-database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      Journey-database: null
+    image: journeymicroservice
+    ports:
+    - published: 5014
+      target: 80
+    - target: 80
+    - published: 732
+      target: 443
+    - target: 443
+    restart: always
+    volumes:
+    - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  logs-database:
+    environment:
+      MYSQL_DATABASE: logs
+      MYSQL_PASSWORD: vero
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: rootPW
+    image: mysql:8.0.25
+    ports:
+    - published: 3390
+      target: 3306
+    restart: always
+    volumes:
+    - logs-datafiles:/var/lib/mysql:rw
+  passenger-database:
+    environment:
+      MYSQL_DATABASE: passenger
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: emanueld92
+    image: mysql:8.0.25
+    ports:
+    - published: 3367
+      target: 3306
+    restart: always
+    volumes:
+    - passenger-datafiles:/var/lib/mysql:rw
+  passengermicroservice:
+    build:
+      context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
+      dockerfile: PassengerMicroservice.Api/Dockerfile
+    depends_on:
+      passenger-database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      Passenger-database: null
+    image: passengermicroservice
+    ports:
+    - published: 5015
+      target: 80
+    - target: 80
+    - published: 733
+      target: 443
+    - target: 443
+    restart: always
+    volumes:
+    - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  ticket-database:
+    environment:
+      MYSQL_DATABASE: ticket
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: emanueld92
+    image: mysql:8.0.25
+    ports:
+    - published: 3368
+      target: 3306
+    restart: always
+    volumes:
+    - ticket-datafiles:/var/lib/mysql:rw
+  ticketmicroservice:
+    build:
+      context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
+      dockerfile: TicketMicroservice.Api/Dockerfile
+    depends_on:
+      ticket-database:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      Ticket-database: null
+    image: ticketmicroservice
+    ports:
+    - published: 5016
+      target: 80
+    - target: 80
+    - published: 734
+      target: 443
+    - target: 443
+    restart: always
+    volumes:
+    - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
+volumes:
+  journey-datafiles: {}
+  logs-datafiles: {}
+  passenger-datafiles: {}
+  ticket-datafiles: {}

@@ -148,3 +148,17 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debu
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\TicketMicroservice.Api.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\TicketMicroservice.Api.genruntimeconfig.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\ref\TicketMicroservice.Api.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\MySql.Data.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Serilog.Sinks.MySQL.dll

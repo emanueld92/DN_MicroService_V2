@@ -3,6 +3,7 @@ volumes:
   journey-datafiles:
   passenger-datafiles:
   ticket-datafiles:
+  logs-datafiles:
 
     #Journey Microservice
 services:
@@ -95,3 +96,16 @@ services:
           MYSQL_USER: emanueld92
           MYSQL_PASSWORD: password
           MYSQL_DATABASE: ticket
+#DB Logs
+  logs-database:
+        image: mysql:8.0.25
+        ports:
+          - "3390:3306"
+        volumes:
+          - logs-datafiles:/var/lib/mysql
+        restart: always
+        environment: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: rootPW
+          MYSQL_PASSWORD: vero
+          MYSQL_DATABASE: logs

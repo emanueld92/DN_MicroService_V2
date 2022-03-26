@@ -8,6 +8,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["JourneyMicroservice.Api/JourneyMicroservice.Api.csproj", "JourneyMicroservice.Api/"]
+COPY ["JourneyMicroservice/JourneyMicroservice.EntityFramework.csproj", "JourneyMicroservice.EntityFramework/"]
+COPY ["JourneyMicroservice/JourneyMicroservice.Core.csproj", "JourneyMicroservice.Core/"]
+COPY ["JourneyMicroservice/JourneyMicroservice.AppServices.csproj", "JourneyMicroservice.AppServices/"]
 RUN dotnet restore "JourneyMicroservice.Api/JourneyMicroservice.Api.csproj"
 COPY . .
 WORKDIR "/src/JourneyMicroservice.Api"

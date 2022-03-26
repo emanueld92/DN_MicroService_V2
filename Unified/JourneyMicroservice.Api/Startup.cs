@@ -37,9 +37,9 @@ namespace JourneyMicroservice.Api
 
             //Database Connection
             string connectionStrig = Configuration.GetConnectionString("Default");
-            services.AddDbContext<JourneyContext>(
-                options => options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
-
+            services.AddDbContext<JourneyContext>(options => 
+            options.UseInMemoryDatabase(databaseName: "journeyMemory"));
+            ///options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
 
             //Services Transient
 
@@ -68,7 +68,7 @@ namespace JourneyMicroservice.Api
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/error-development");
             }
             else
             {
@@ -79,7 +79,7 @@ namespace JourneyMicroservice.Api
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JourneyMicroservice.Api v1"));
             //Migrates 
-            db.Database.Migrate();
+            //db.Database.Migrate();
 
             app.UseHttpsRedirection();
 

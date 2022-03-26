@@ -8,6 +8,6 @@ namespace TicketMicroservice.AppServices
 {
     public interface IPassengerAppServices
     {
-        Task<PassengerMicroservice.Core.Entity.Passenger> GetJourney(int id);
+        Task<PassengerMicroservice.Core.Entity.Passenger> GetPassenger(int id);
     }
 }

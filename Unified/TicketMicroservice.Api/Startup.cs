@@ -8,9 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using TicketMicroservice.AppServices;
 using TicketMicroservice.Core.Entity;
@@ -36,7 +38,7 @@ namespace TicketMicroservice.Api
             string connectionStrig = Configuration.GetConnectionString("Default");
             services.AddDbContext<TicketContext>(
                 options => options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
-
+                //options.UseInMemoryDatabase(databaseName: "ticketMemory"));
 
 
             //Services Transient
@@ -45,17 +47,22 @@ namespace TicketMicroservice.Api
             services.AddTransient<IJourneyAppServices, JourneyAppServices>();
             services.AddTransient<IPassengerAppServices, PassengerAppServices>();
 
+
+            //SSl
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+
             services.AddHttpClient("passenger", client =>
             {
 
                 client.BaseAddress = new Uri((Configuration["AppSettings:JourneyUrlBase"]));
-            });
+            }).ConfigurePrimaryHttpMessageHandler(() => (clientHandler));
 
             services.AddHttpClient("journey", client =>
             {
 
                 client.BaseAddress = new Uri((Configuration["AppSettings:PassengerUrlBase"]));
-            });
+            }).ConfigurePrimaryHttpMessageHandler(() => (clientHandler));
             //repository
 
             services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
@@ -72,11 +79,16 @@ namespace TicketMicroservice.Api
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketMicroservice.Api v1"));
+                app.UseExceptionHandler("/error-development");
             }
-
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
+           
+            app.UseSwagger();
+           app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketMicroservice.Api v1"));
+            //Migrate
             db.Database.Migrate();
             app.UseHttpsRedirection();
 

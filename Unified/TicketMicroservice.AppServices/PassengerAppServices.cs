@@ -16,7 +16,7 @@ namespace TicketMicroservice.AppServices
         {
             _clientFactory = clientFactory;
         }
-        public async Task<PassengerMicroservice.Core.Entity.Passenger> GetJourney(int id)
+        public async Task<PassengerMicroservice.Core.Entity.Passenger> GetPassenger(int id)
         {
 
 
