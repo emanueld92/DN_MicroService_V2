@@ -34,8 +34,9 @@ namespace PassengerMicroservice.Api
 
             //Database Connection
             string connectionStrig = Configuration.GetConnectionString("Default");
-            services.AddDbContext<PassengerContext>(
-                options => options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
+            services.AddDbContext<PassengerContext>(options=>
+           // options.UseInMemoryDatabase(databaseName: "passengerMemory"));
+            options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
 
             services.AddTransient<IPassengerAppServices, PassengerAppServices>();
             
@@ -45,6 +46,7 @@ namespace PassengerMicroservice.Api
 
 
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PassengerMicroservice.Api", Version = "v1" });
@@ -56,11 +58,20 @@ namespace PassengerMicroservice.Api
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PassengerMicroservice.Api v1"));
+                app.UseExceptionHandler("/error-development");
             }
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PassengerMicroservice.Api v1"));
+            
+            //Migrate
             db.Database.Migrate();
+            
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();

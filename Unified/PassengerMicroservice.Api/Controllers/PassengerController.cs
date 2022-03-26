@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using PassengerMicroservice.Api.Models;
 using PassengerMicroservice.AppServices;
 using PassengerMicroservice.Core.Entity;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -14,14 +17,20 @@ namespace PassengerMicroservice.Api.Controllers
     {
 
         private readonly IPassengerAppServices _passengerAppServices;
-
-        public PassengerController(IPassengerAppServices passengerAppServices)=> _passengerAppServices = passengerAppServices;
+        private readonly ILogger _logger;
+        public PassengerController(IPassengerAppServices passengerAppServices, ILogger<PassengerController> logger)
+        {
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _passengerAppServices = passengerAppServices ;
+        } 
 
         // GET: api/<PassengerController>
         [HttpGet]
         public async Task<IEnumerable<Passenger>> Get()
         {
-            return await _passengerAppServices.GetPassengerAllAsync();
+            var passengers = await _passengerAppServices.GetPassengerAllAsync();
+           _logger.LogInformation("Total passengers: " + passengers?.Count);
+            return passengers;
         }
 
         // GET api/<PassengerController>/5
@@ -44,19 +53,40 @@ namespace PassengerMicroservice.Api.Controllers
 
         // POST api/<PassengerController>
         [HttpPost]
-        public async  Task Post([FromBody] Passenger value)
+        public async  Task Post([FromBody] PassengerViewModel value)
         {
-            
-            await _passengerAppServices.AddPassengerAsync(value);
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+            Passenger passenger = new Passenger
+            {
+                FirstName=value.FirstName,
+                LastName=value.LastName,
+                Age=value.Age
+            };
+            await _passengerAppServices.AddPassengerAsync(passenger);
             
         }
 
         // PUT api/<PassengerController>/5
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody] Passenger value)
+        public async Task Put(int id, [FromBody] PassengerViewModel value)
         {
-            value.IdPassenger = id;
-            await _passengerAppServices.EditPassengerAsync(value);
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            Passenger passenger = new Passenger
+            {
+                IdPassenger = id,
+                FirstName = value.FirstName,
+                LastName = value.LastName,
+                Age = value.Age
+            };
+
+            await _passengerAppServices.EditPassengerAsync(passenger);
             
         }
 
