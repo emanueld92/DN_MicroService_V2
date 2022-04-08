@@ -8,6 +8,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["PassengerMicroservice.Api/PassengerMicroservice.Api.csproj", "PassengerMicroservice.Api/"]
+COPY ["PassengerMicroservice.AppServices/PassengerMicroservice.AppServices.csproj", "PassengerMicroservice.AppServices/"]
+COPY ["PassengerMicroservice.Core/PassengerMicroservice.Core.csproj", "PassengerMicroservice.Core.Api/"]
+COPY ["PassengerMicroservice.EntityFramework/PassengerMicroservice.EntityFramework.csproj", "PassengerMicroservice.EntityFramework/"]
 RUN dotnet restore "PassengerMicroservice.Api/PassengerMicroservice.Api.csproj"
 COPY . .
 WORKDIR "/src/PassengerMicroservice.Api"

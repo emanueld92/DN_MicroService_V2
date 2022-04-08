@@ -9,7 +9,7 @@ namespace TicketMicroservice.EntityFramework.Repository
     public class Repository<TId, TEntity> : IRepository<TId, TEntity> where TEntity : class, new()
     {
         private readonly TicketContext _context;
-        protected TicketContext Context { get => _context; }
+     
 
         public Repository(TicketContext context) => _context = context;
 

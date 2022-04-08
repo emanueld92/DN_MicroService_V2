@@ -18,4 +18,8 @@
     <ProjectReference Include="..\JourneyMicroservice.Core\JourneyMicroservice.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

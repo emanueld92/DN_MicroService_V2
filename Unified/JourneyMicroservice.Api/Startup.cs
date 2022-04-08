@@ -38,18 +38,16 @@ namespace JourneyMicroservice.Api
             //Database Connection
             string connectionStrig = Configuration.GetConnectionString("Default");
             services.AddDbContext<JourneyContext>(options => 
-            options.UseInMemoryDatabase(databaseName: "journeyMemory"));
-            ///options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
+            //options.UseInMemoryDatabase(databaseName: "journeyMemory"));
+            options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
 
             //Services Transient
 
             services.AddTransient<IJourneyAppServices, JourneyAppServices>();
-            services.AddTransient<IDestinationAppServices, DestinationAppServices>();
-            services.AddTransient<IOriginAppServices,OriginAppServices>();
+
             //Repository
             services.AddTransient<IRepository<int, Journey>, JourneyRepository>();
-            services.AddTransient<IRepository<int, Origin>, OriginRepository>();
-            services.AddTransient<IRepository<int, Destination>, DestinationRepository>();
+
 
             services.Configure<ApiBehaviorOptions>(options =>
             {
@@ -79,7 +77,7 @@ namespace JourneyMicroservice.Api
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JourneyMicroservice.Api v1"));
             //Migrates 
-            //db.Database.Migrate();
+            db.Database.Migrate();
 
             app.UseHttpsRedirection();
 

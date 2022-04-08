@@ -55,6 +55,19 @@ services:
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
     - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
     - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
+  logs-database:
+    environment:
+      MYSQL_DATABASE: logs
+      MYSQL_PASSWORD: vero
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: rootPW
+    image: mysql:8.0.25
+    ports:
+    - published: 3390
+      target: 3306
+    restart: always
+    volumes:
+    - logs-datafiles:/var/lib/mysql:rw
   passenger-database:
     environment:
       MYSQL_DATABASE: passenger
@@ -170,5 +183,6 @@ services:
 version: '3.4'
 volumes:
   journey-datafiles: {}
+  logs-datafiles: {}
   passenger-datafiles: {}
   ticket-datafiles: {}

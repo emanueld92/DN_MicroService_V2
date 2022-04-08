@@ -13,9 +13,6 @@ namespace JourneyMicroservice.EntityFramework
     {
         public virtual DbSet<Journey> Journeys { get; set; }
 
-        public virtual DbSet<Origin> Origins { get; set; }
-
-        public virtual DbSet<Destination> Destinations { get; set; }
 
 
 

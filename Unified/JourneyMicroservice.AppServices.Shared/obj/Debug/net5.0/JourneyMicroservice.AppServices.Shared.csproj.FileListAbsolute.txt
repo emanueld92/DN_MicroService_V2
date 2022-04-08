@@ -1,0 +1,12 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\bin\Debug\net5.0\JourneyMicroservice.AppServices.Shared.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\bin\Debug\net5.0\JourneyMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\bin\Debug\net5.0\JourneyMicroservice.AppServices.Shared.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\refint\JourneyMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\JourneyMicroservice.AppServices.Shared.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.AppServices.Shared\obj\Debug\net5.0\ref\JourneyMicroservice.AppServices.Shared.dll

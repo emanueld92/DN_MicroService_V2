@@ -8,6 +8,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["TicketMicroservice.Api/TicketMicroservice.Api.csproj", "TicketMicroservice.Api/"]
+COPY ["TicketMicroservice.AppServices/TicketMicroservice.AppServices.csproj", "TicketMicroservice.AppServices/"]
+COPY ["TicketMicroservice.Core/TicketMicroservice.Core.csproj", "TicketMicroservice.Core/"]
+COPY ["TicketMicroservice.EntityFramework/TicketMicroservice.EntityFramework.csproj", "TicketMicroservice.EntityFramework/"]
 RUN dotnet restore "TicketMicroservice.Api/TicketMicroservice.Api.csproj"
 COPY . .
 WORKDIR "/src/TicketMicroservice.Api"

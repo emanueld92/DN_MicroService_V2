@@ -47,27 +47,31 @@ namespace TicketMicroservice.Api
             services.AddTransient<IJourneyAppServices, JourneyAppServices>();
             services.AddTransient<IPassengerAppServices, PassengerAppServices>();
 
+            //repository
+            services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
 
             //SSl
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
+            //AppService to other Microservices
             services.AddHttpClient("passenger", client =>
             {
 
-                client.BaseAddress = new Uri((Configuration["AppSettings:JourneyUrlBase"]));
+                client.BaseAddress = new Uri((Configuration["AppSettings:PassengerUrlBase"]));
             }).ConfigurePrimaryHttpMessageHandler(() => (clientHandler));
 
             services.AddHttpClient("journey", client =>
             {
 
-                client.BaseAddress = new Uri((Configuration["AppSettings:PassengerUrlBase"]));
+                client.BaseAddress = new Uri((Configuration["AppSettings:JourneyUrlBase"]));
             }).ConfigurePrimaryHttpMessageHandler(() => (clientHandler));
-            //repository
 
-            services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
+            //Newtonsoft add Controller
+            services.AddControllers().AddNewtonsoftJson(x =>
+                x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-            services.AddControllers();
+            //Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TicketMicroservice.Api", Version = "v1" });
@@ -87,7 +91,7 @@ namespace TicketMicroservice.Api
             }
            
             app.UseSwagger();
-           app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketMicroservice.Api v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketMicroservice.Api v1"));
             //Migrate
             db.Database.Migrate();
             app.UseHttpsRedirection();

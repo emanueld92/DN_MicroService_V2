@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g+Zs3TR0eUW3GugXu6X/gNaQYq+n3qmjAkXTTUX+9QhNB4SR8UBJj3+170uM+p8VYarFVHsmeRyOZXkpBsh6Rw==",
+  "dgSpecHash": "IBoacihHrEVllR7IShL9rLFEymtxXbFt7VmNV1r7z68bZ/8in/b6XE+Hk53TjUxzmuf9YBnV3fXXE3yvWZHacA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\JourneyMicroservice.AppServices\\JourneyMicroservice.AppServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.15\\microsoft.entityframeworkcore.5.0.15.nupkg.sha512",

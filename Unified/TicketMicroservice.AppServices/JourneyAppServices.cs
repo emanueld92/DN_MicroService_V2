@@ -27,8 +27,8 @@ namespace TicketMicroservice.AppServices
             JourneyMicroservice.Core.Entity.Journey journey;
             if (response.IsSuccessStatusCode)
             {
-                journey = Newtonsoft.Json.JsonConvert.DeserializeObject<JourneyMicroservice.Core.Entity.Journey>(
-                    await response.Content.ReadAsStringAsync());
+                journey = Newtonsoft.Json.JsonConvert.DeserializeObject<Journey>(
+                await response.Content.ReadAsStringAsync());
 
                 return journey;
             }
