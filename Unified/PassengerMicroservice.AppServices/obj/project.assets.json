@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AutoMapper/11.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -256,6 +268,16 @@
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
+      "PassengerMicroservice.AppServices.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PassengerMicroservice.AppServices.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PassengerMicroservice.AppServices.Shared.dll": {}
+        }
+      },
       "PassengerMicroservice.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -285,6 +307,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/11.0.1": {
+      "sha512": "WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
+      "type": "package",
+      "path": "automapper/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.11.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -844,6 +881,11 @@
         "version.txt"
       ]
     },
+    "PassengerMicroservice.AppServices.Shared/1.0.0": {
+      "type": "project",
+      "path": "../PassengerMicroservice.AppServices.Shared/PassengerMicroservice.AppServices.Shared.csproj",
+      "msbuildProject": "../PassengerMicroservice.AppServices.Shared/PassengerMicroservice.AppServices.Shared.csproj"
+    },
     "PassengerMicroservice.Core/1.0.0": {
       "type": "project",
       "path": "../PassengerMicroservice.Core/PassengerMicroservice.Core.csproj",
@@ -857,9 +899,11 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AutoMapper >= 11.0.1",
       "Microsoft.EntityFrameworkCore >= 5.0.15",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.15",
+      "PassengerMicroservice.AppServices.Shared >= 1.0.0",
       "PassengerMicroservice.Core >= 1.0.0",
       "PassengerMicroservice.EntityFramework >= 1.0.0"
     ]
@@ -891,6 +935,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\PassengerMicroservice.AppServices.Shared\\PassengerMicroservice.AppServices.Shared.csproj": {
+              "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\PassengerMicroservice.AppServices.Shared\\PassengerMicroservice.AppServices.Shared.csproj"
+            },
             "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\PassengerMicroservice.Core\\PassengerMicroservice.Core.csproj": {
               "projectPath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\PassengerMicroservice.Core\\PassengerMicroservice.Core.csproj"
             },
@@ -910,6 +957,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.15, )"

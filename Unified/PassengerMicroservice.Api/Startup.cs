@@ -16,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace PassengerMicroservice.Api
 {
@@ -35,15 +36,17 @@ namespace PassengerMicroservice.Api
             //Database Connection
             string connectionStrig = Configuration.GetConnectionString("Default");
             services.AddDbContext<PassengerContext>(options=>
-           // options.UseInMemoryDatabase(databaseName: "passengerMemory"));
-            options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
+            options.UseInMemoryDatabase(databaseName: "passengerMemory"));
+           // options.UseMySql(connectionStrig, ServerVersion.AutoDetect(connectionStrig)));
 
             services.AddTransient<IPassengerAppServices, PassengerAppServices>();
             
             //Repository
 
-            services.AddTransient<IRepository<int, Passenger>, PassengerRepository>();
+            services.AddTransient<IRepository<int, PassengerMicroservice.Core.Entity.Passenger>, PassengerRepository>();
 
+            //AutoMapper
+            services.AddAutoMapper(typeof(PassengerMicroservice.AppServices.MapperPassenger));
 
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
            
@@ -69,7 +72,7 @@ namespace PassengerMicroservice.Api
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PassengerMicroservice.Api v1"));
             
             //Migrate
-            db.Database.Migrate();
+           // db.Database.Migrate();
             
             
             app.UseHttpsRedirection();

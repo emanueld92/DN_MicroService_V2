@@ -6,24 +6,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using PassengerMicroservice.Passenger.Dto;
 
 namespace PassengerMicroservice.AppServices
 {
     public class PassengerAppServices : IPassengerAppServices
     {
-        private readonly IRepository<int, Passenger> _repository;
-        public PassengerAppServices(IRepository<int, Passenger> repository)
+        private readonly IRepository<int,PassengerMicroservice.Core.Entity.Passenger> _repository;
+        private readonly IMapper _mapper;
+        public PassengerAppServices(IRepository<int, PassengerMicroservice.Core.Entity.Passenger> repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;   
         }
 
 
         //Insert
-        public async Task<int> AddPassengerAsync(Passenger passenger)
+        public async Task<int> AddPassengerAsync(PassengerDto passenger)
         {
-            await _repository.AddAsync(passenger);
+            var p = _mapper.Map<PassengerMicroservice.Core.Entity.Passenger>(passenger);
+            await _repository.AddAsync(p);
 
-            return passenger.IdPassenger;
+            return p.IdPassenger;
         }
 
         //Delete
@@ -34,22 +39,24 @@ namespace PassengerMicroservice.AppServices
 
         //Update
 
-        public async Task EditPassengerAsync(Passenger passenger)
+        public async Task EditPassengerAsync(PassengerDto passenger)
         {
-            await _repository.UpdateAsync(passenger);
+            var p = _mapper.Map<PassengerMicroservice.Core.Entity.Passenger>(passenger);
+            await _repository.UpdateAsync(p);
 
         }
 
         //Get ALL
-        public async Task<List<Passenger>> GetPassengerAllAsync()
+        public async Task<List<PassengerDto>> GetPassengerAllAsync()
         {
-
-            return await _repository.GetAll().ToListAsync();
+            var ps= await _repository.GetAll().ToListAsync();
+            List<PassengerDto> passengers = _mapper.Map<List<PassengerDto>>(ps);
+            return passengers;
         }
         //Get Id
-        public async Task<Passenger> GetPassengerAsync(int passengerId)
+        public async Task<PassengerDto> GetPassengerAsync(int passengerId)
         {
-            return await _repository.GetAsync(passengerId);
+            return _mapper.Map<PassengerDto>(await _repository.GetAsync(passengerId));
 
 
         }

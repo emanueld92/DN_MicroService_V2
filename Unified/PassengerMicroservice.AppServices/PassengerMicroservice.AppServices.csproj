@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
@@ -14,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PassengerMicroservice.AppServices.Shared\PassengerMicroservice.AppServices.Shared.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.Core\PassengerMicroservice.Core.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.EntityFramework\PassengerMicroservice.EntityFramework.csproj" />
   </ItemGroup>

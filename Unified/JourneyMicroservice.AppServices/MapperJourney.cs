@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace JourneyMicroservice.AppServices
 {
-    public class MapperProfile:Profile
+    public class MapperJourney:Profile
     {
-        public MapperProfile()
+        public MapperJourney()
         {
             //core to DTO Mapper
             CreateMap<JourneyMicroservice.Core.Entity.Journey, JourneyMicroservice.Journey.Dto.JourneyDto>();

@@ -56,7 +56,9 @@ namespace JourneyMicroservice.Api
             });
 
             //Automapper
-            services.AddAutoMapper(typeof(JourneyMicroservice.AppServices.MapperProfile));
+            services.AddAutoMapper(typeof(JourneyMicroservice.AppServices.MapperJourney));
+
+
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
             {

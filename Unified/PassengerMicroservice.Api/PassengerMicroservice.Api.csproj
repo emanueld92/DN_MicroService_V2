@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.15">
       <PrivateAssets>all</PrivateAssets>
@@ -22,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PassengerMicroservice.AppServices.Shared\PassengerMicroservice.AppServices.Shared.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.AppServices\PassengerMicroservice.AppServices.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.Core\PassengerMicroservice.Core.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.EntityFramework\PassengerMicroservice.EntityFramework.csproj" />

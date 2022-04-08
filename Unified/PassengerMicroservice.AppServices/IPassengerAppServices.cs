@@ -1,4 +1,5 @@
 ﻿using PassengerMicroservice.Core.Entity;
+using PassengerMicroservice.Passenger.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +12,14 @@ namespace PassengerMicroservice.AppServices
     {
 
         //Get all
-        Task<List<Passenger>> GetPassengerAllAsync();
+        Task<List<PassengerDto>> GetPassengerAllAsync();
         //Create
-        Task<int> AddPassengerAsync(Passenger passenger);
+        Task<int> AddPassengerAsync(PassengerDto passenger);
         //Delete
         Task DeletePassengerAsync(int passengerId);
         //Get ID
-        Task<Passenger> GetPassengerAsync(int passengerId);
+        Task<PassengerDto> GetPassengerAsync(int passengerId);
         //Update
-        Task EditPassengerAsync(Passenger passenger);
+        Task EditPassengerAsync(PassengerDto passenger);
     }
 }

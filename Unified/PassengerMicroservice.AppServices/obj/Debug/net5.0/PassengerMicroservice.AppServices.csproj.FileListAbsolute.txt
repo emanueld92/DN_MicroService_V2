@@ -3,8 +3,10 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServic
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.AppServices.runtimeconfig.dev.json
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.AppServices.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.AppServices.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.AppServices.Shared.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.Core.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.AppServices.Shared.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.Core.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\bin\Debug\net5.0\PassengerMicroservice.EntityFramework.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.AppServices\obj\Debug\net5.0\PassengerMicroservice.AppServices.csproj.AssemblyReference.cache
