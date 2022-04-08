@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace JourneyMicroservice.Api
 {
@@ -46,7 +47,7 @@ namespace JourneyMicroservice.Api
             services.AddTransient<IJourneyAppServices, JourneyAppServices>();
 
             //Repository
-            services.AddTransient<IRepository<int, Journey>, JourneyRepository>();
+            services.AddTransient<IRepository<int, JourneyMicroservice.Core.Entity.Journey>, JourneyRepository>();
 
 
             services.Configure<ApiBehaviorOptions>(options =>
@@ -54,6 +55,8 @@ namespace JourneyMicroservice.Api
                 options.SuppressModelStateInvalidFilter = true;
             });
 
+            //Automapper
+            services.AddAutoMapper(typeof(JourneyMicroservice.AppServices.MapperProfile));
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
             {

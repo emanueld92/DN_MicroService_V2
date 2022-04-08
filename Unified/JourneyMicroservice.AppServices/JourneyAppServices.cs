@@ -1,5 +1,6 @@
 ﻿using JourneyMicroservice.Core.Entity;
 using JourneyMicroservice.EntityFramework.Repository;
+using JourneyMicroservice.Journey.Dto;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,24 +8,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using AutoMapper;
 namespace JourneyMicroservice.AppServices
 {
     public class JourneyAppServices : IJourneyAppServices
     {
-        private readonly IRepository<int, Journey> _repository;
-        public JourneyAppServices(IRepository<int, Journey> repository)
+        private readonly IRepository<int, JourneyMicroservice.Core.Entity.Journey> _repository;
+        private readonly IMapper _mapper;
+        public JourneyAppServices(IRepository<int, JourneyMicroservice.Core.Entity.Journey> repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
 
         //Insert
-        public async Task<int> AddJourneyAsync(Journey journey)
+        public async Task<int> AddJourneyAsync(JourneyDto journey)
         {
-            await _repository.AddAsync(journey);
+            var j = _mapper.Map<JourneyMicroservice.Core.Entity.Journey>(journey);
+            await _repository.AddAsync(j);
+     
 
-            return journey.IdJourney;
+            return j.IdJourney;
         }
 
         //Delete
@@ -35,22 +40,27 @@ namespace JourneyMicroservice.AppServices
 
         //Update
 
-        public async Task EditJourneyAsync(Journey journey)
+        public async Task EditJourneyAsync(JourneyDto journey)
         {
-            await _repository.UpdateAsync(journey);
+            var j = _mapper.Map<JourneyMicroservice.Core.Entity.Journey>(journey);
+            
+            await _repository.UpdateAsync(j);
 
         }
 
         //Get ALL
-        public async Task<List<Journey>> GetJourneyAllAsync()
+        public async Task<List<JourneyDto>> GetJourneyAllAsync()
         {
-
-            return await _repository.GetAll().ToListAsync();
+            var j= await _repository.GetAll().ToListAsync();
+            List<JourneyDto> journeys = _mapper.Map<List<JourneyDto>>(j);
+            return journeys;
         }
         //Get Id
-        public async Task<Journey> GetJourneyAsync(int journeyId)
+        public async Task<JourneyDto> GetJourneyAsync(int journeyId)
         {
-            return await _repository.GetAsync(journeyId);
+
+
+            return _mapper.Map<JourneyDto>(await _repository.GetAsync(journeyId));
 
 
         }

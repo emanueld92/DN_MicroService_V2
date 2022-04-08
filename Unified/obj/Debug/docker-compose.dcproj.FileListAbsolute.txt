@@ -63,3 +63,11 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.Co
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\AutoMapper.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.AppServices.Shared.pdb

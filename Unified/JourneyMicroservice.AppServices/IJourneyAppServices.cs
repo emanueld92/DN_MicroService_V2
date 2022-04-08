@@ -1,5 +1,5 @@
-﻿using JourneyMicroservice.Core.Entity;
-
+﻿using JourneyMicroservice.Journey.Dto;
+using JourneyMicroservice.Core.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +11,19 @@ namespace JourneyMicroservice.AppServices
     public interface IJourneyAppServices
     {
         //Get all
-        Task<List<Journey>> GetJourneyAllAsync();
+        Task<List<JourneyDto>> GetJourneyAllAsync();
         
         
         //Get ID
-        Task<Journey> GetJourneyAsync(int JourneyId);
+        Task<JourneyDto> GetJourneyAsync(int JourneyId);
         
         
         //Insert
-        Task<int> AddJourneyAsync(Journey journey);
+        Task<int> AddJourneyAsync(JourneyDto journey);
 
 
         //Edit
-        Task EditJourneyAsync(Journey journey);
+        Task EditJourneyAsync(JourneyDto journey);
 
 
         //Delete

@@ -1,7 +1,7 @@
 ﻿using JourneyMicroservice.Api.Models;
 using JourneyMicroservice.AppServices;
 using JourneyMicroservice.Core.Entity;
-
+using JourneyMicroservice.Journey.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -26,16 +26,16 @@ namespace JourneyMicroservice.Api.Controllers
         }
             // GET: api/<JourneyController>
         [HttpGet]
-        public async Task<IEnumerable<Journey>> Get()
+        public async Task<List<JourneyDto>> Get()
         {
-             var journeys =await _journeyAppService.GetJourneyAllAsync();
+            List<JourneyDto> journeys= await _journeyAppService.GetJourneyAllAsync();
             _logger.LogInformation("Total journeys: " + journeys?.Count);
             return journeys;
         }
 
         // GET api/<JourneyController>/5
         [HttpGet("{id}")]
-        public async Task<Journey> Get(int id)
+        public async Task<JourneyDto> Get(int id)
         {
 
             return await _journeyAppService.GetJourneyAsync(id);
@@ -43,16 +43,27 @@ namespace JourneyMicroservice.Api.Controllers
 
         // POST api/<JourneyController>
         [HttpPost]
-        public async Task Post([FromBody] Journey value)
+        public async Task Post([FromBody] JourneyDto value)
         {
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
             await _journeyAppService.AddJourneyAsync(value);
         }
 
         // PUT api/<JourneyController>/5
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody] Journey value)
+        public async Task Put(int id, [FromBody] JourneyDto value)
         {
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
             value.IdJourney = id;
+
             await _journeyAppService.EditJourneyAsync(value);
         }
 

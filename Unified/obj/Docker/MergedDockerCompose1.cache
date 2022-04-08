@@ -16,29 +16,14 @@ services:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: JourneyMicroservice.Api/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: JourneyMicroservice.Api
-      target: base
-    container_name: JourneyMicroservice.Api
     depends_on:
       journey-database:
         condition: service_started
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
       Journey-database: null
-      NUGET_FALLBACK_PACKAGES: ''
-    image: journeymicroservice:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/JourneyMicroservice.Api.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    image: journeymicroservice
     ports:
     - published: 5014
       target: 80
@@ -47,14 +32,9 @@ services:
       target: 443
     - target: 443
     restart: always
-    tty: true
     volumes:
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified\JourneyMicroservice.Api:/app:rw
-    - C:\Users\Emanueld92\vsdbg\vs2017u5:/remote_debugger:rw
     - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
   logs-database:
     environment:
       MYSQL_DATABASE: logs
@@ -85,29 +65,14 @@ services:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: PassengerMicroservice.Api/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: PassengerMicroservice.Api
-      target: base
-    container_name: PassengerMicroservice.Api
     depends_on:
       passenger-database:
         condition: service_started
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
-      NUGET_FALLBACK_PACKAGES: ''
       Passenger-database: null
-    image: passengermicroservice:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/PassengerMicroservice.Api.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    image: passengermicroservice
     ports:
     - published: 5015
       target: 80
@@ -116,14 +81,9 @@ services:
       target: 443
     - target: 443
     restart: always
-    tty: true
     volumes:
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified\PassengerMicroservice.Api:/app:rw
-    - C:\Users\Emanueld92\vsdbg\vs2017u5:/remote_debugger:rw
     - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
   ticket-database:
     environment:
       MYSQL_DATABASE: ticket
@@ -141,29 +101,14 @@ services:
     build:
       context: C:\Users\Emanueld92\source\repos\Crud_V2\Unified
       dockerfile: TicketMicroservice.Api/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: TicketMicroservice.Api
-      target: base
-    container_name: TicketMicroservice.Api
     depends_on:
       ticket-database:
         condition: service_started
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
-      NUGET_FALLBACK_PACKAGES: ''
       Ticket-database: null
-    image: ticketmicroservice:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/TicketMicroservice.Api.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    image: ticketmicroservice
     ports:
     - published: 5016
       target: 80
@@ -172,14 +117,9 @@ services:
       target: 443
     - target: 443
     restart: always
-    tty: true
     volumes:
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api:/app:rw
-    - C:\Users\Emanueld92\vsdbg\vs2017u5:/remote_debugger:rw
     - C:\Users\Emanueld92\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\Emanueld92\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - C:\Users\Emanueld92\.nuget\packages:/root/.nuget/packages:ro
-    - C:\Users\Emanueld92\source\repos\Crud_V2\Unified:/src:rw
 version: '3.4'
 volumes:
   journey-datafiles: {}

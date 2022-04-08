@@ -13,7 +13,12 @@ namespace JourneyMicroservice.AppServices
     {
         public MapperProfile()
         {
-        ///    CreateMap<JourneyMicroservice.Core.Entity.Journey, JourneyMicroservice.JourneyDto>{ }
+            //core to DTO Mapper
+            CreateMap<JourneyMicroservice.Core.Entity.Journey, JourneyMicroservice.Journey.Dto.JourneyDto>();
+            
+            ///Dto to Core Mapper
+            CreateMap<JourneyMicroservice.Journey.Dto.JourneyDto, JourneyMicroservice.Core.Entity.Journey >();
+
         }
 
     }

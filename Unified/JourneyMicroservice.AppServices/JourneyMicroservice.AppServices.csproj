@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\JourneyMicroservice.AppServices.Shared\JourneyMicroservice.AppServices.Shared.csproj" />
     <ProjectReference Include="..\JourneyMicroservice.Core\JourneyMicroservice.Core.csproj" />
     <ProjectReference Include="..\JourneyMicroservice.EntityFramework\JourneyMicroservice.EntityFramework.csproj" />
   </ItemGroup>
