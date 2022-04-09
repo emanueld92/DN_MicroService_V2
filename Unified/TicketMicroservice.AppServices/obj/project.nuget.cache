@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "k7Z1VCZakO2J8Jlk27+MgwksTfn5c+W6vEBrLfXxErhclsGvZt1YQghS9DcC7j3U26JF3Csc5ACehrkNPGSfEw==",
+  "dgSpecHash": "1CzbaDejZrX9pndX7ptpInUpadDc7tpiQzkX6krn2jsVSkvoMvFlSJhL352N4c9+caM79r1EjXK/3meZY/DJ+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emanueld92\\source\\repos\\Crud_V2\\Unified\\TicketMicroservice.AppServices\\TicketMicroservice.AppServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.15\\microsoft.entityframeworkcore.5.0.15.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.15\\microsoft.entityframeworkcore.abstractions.5.0.15.nupkg.sha512",
     "C:\\Users\\Emanueld92\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.15\\microsoft.entityframeworkcore.analyzers.5.0.15.nupkg.sha512",

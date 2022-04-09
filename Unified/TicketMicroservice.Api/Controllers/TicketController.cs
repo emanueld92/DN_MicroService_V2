@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TicketMicroservice.Api.Models;
 using TicketMicroservice.AppServices;
 using TicketMicroservice.Core.Entity;
+using TicketMicroservice.Ticket.Dto;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -30,23 +31,25 @@ namespace TicketMicroservice.Api.Controllers
 
         // GET: api/<TicketController>
         [HttpGet]
-        public async Task<IEnumerable<Ticket>> GetAsync()
+        public async Task<List<TicketDto>> GetAsync()
         {
-            var tickets  = await _ticketAppServices.GetTicketAllAsync();
+
+            List<TicketDto> tickets= await _ticketAppServices.GetTicketAllAsync();
+           
             _logger.LogInformation("Total tickets: " + tickets?.Count);
             return tickets;
         }
 
         // GET api/<TicketController>/5
         [HttpGet("{id}")]
-        public async Task<Ticket> GetAsync(int id)
+        public async Task<TicketDto> GetAsync(int id)
         {
             return await _ticketAppServices.GetTicketAsync(id);
         }
 
         // POST api/<TicketController>
         [HttpPost]
-        public async void Post([FromBody] TicketViewModel value)
+        public async void Post([FromBody] TicketDto value)
         {
             
 
@@ -67,11 +70,11 @@ namespace TicketMicroservice.Api.Controllers
                 throw new Exception("This passenger is not exist");
             }
 
-            Ticket ticket = new Ticket
+            TicketDto ticket = new TicketDto
             {
                 JourneyId = value.JourneyId,
-                PassengerId=value.PassengerId,
-                Seat=value.Seat
+                PassengerId = value.PassengerId,
+                Seat = value.Seat
                 
             };
             await _ticketAppServices.AddTicketAsync(ticket);
@@ -97,9 +100,10 @@ namespace TicketMicroservice.Api.Controllers
             {
                 throw new Exception("unregistered destination");
             }
-            Ticket ticket = new Ticket
+            TicketDto ticket = new TicketDto
             {
-                IdTicket=id,
+
+                IdTicket = id,
                 PassengerId=value.PassengerId,
                 JourneyId=value.JourneyId,
                 Seat=value.Seat

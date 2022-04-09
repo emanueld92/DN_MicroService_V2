@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -13,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\JourneyMicroservice.Core\JourneyMicroservice.Core.csproj" />
     <ProjectReference Include="..\PassengerMicroservice.Core\PassengerMicroservice.Core.csproj" />
+    <ProjectReference Include="..\TicketMicroservice.AppServices.Shared\TicketMicroservice.AppServices.Shared.csproj" />
     <ProjectReference Include="..\TicketMicroservice.Core\TicketMicroservice.Core.csproj" />
     <ProjectReference Include="..\TicketMicroservice.EntityFramework\TicketMicroservice.EntityFramework.csproj" />
   </ItemGroup>

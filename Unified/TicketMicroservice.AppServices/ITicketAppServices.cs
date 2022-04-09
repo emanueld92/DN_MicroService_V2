@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TicketMicroservice.Core.Entity;
+using TicketMicroservice.Ticket.Dto;
 
 namespace TicketMicroservice.AppServices
 {
@@ -11,19 +12,19 @@ namespace TicketMicroservice.AppServices
     {
 
         //Get all
-        Task<List<Ticket>> GetTicketAllAsync();
+        Task<List<TicketDto>> GetTicketAllAsync();
 
 
         //Get ID
-        Task<Ticket> GetTicketAsync(int TicketId);
+        Task<TicketDto> GetTicketAsync(int TicketId);
 
 
         //Insert
-        Task<int> AddTicketAsync(Ticket ticket);
+        Task<int> AddTicketAsync(TicketDto ticket);
 
 
         //Edit
-        Task EditTicketAsync(Ticket ticket);
+        Task EditTicketAsync(TicketDto ticket);
 
 
         //Delete

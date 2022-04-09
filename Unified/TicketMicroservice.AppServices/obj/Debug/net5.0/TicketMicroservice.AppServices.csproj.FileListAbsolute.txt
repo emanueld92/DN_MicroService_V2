@@ -19,3 +19,5 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\obj\Debug\net5.0\refint\TicketMicroservice.AppServices.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\obj\Debug\net5.0\TicketMicroservice.AppServices.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\obj\Debug\net5.0\ref\TicketMicroservice.AppServices.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.pdb

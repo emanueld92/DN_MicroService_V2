@@ -18,7 +18,7 @@ using TicketMicroservice.AppServices;
 using TicketMicroservice.Core.Entity;
 using TicketMicroservice.EntityFramework;
 using TicketMicroservice.EntityFramework.Repository;
-
+using AutoMapper;
 namespace TicketMicroservice.Api
 {
     public class Startup
@@ -48,7 +48,7 @@ namespace TicketMicroservice.Api
             services.AddTransient<IPassengerAppServices, PassengerAppServices>();
 
             //repository
-            services.AddTransient<IRepository<int, Ticket>, TicketRepository>();
+            services.AddTransient<IRepository<int,TicketMicroservice.Core.Entity.Ticket>, TicketRepository>();
 
             //SSl
             HttpClientHandler clientHandler = new HttpClientHandler();
@@ -66,6 +66,9 @@ namespace TicketMicroservice.Api
 
                 client.BaseAddress = new Uri((Configuration["AppSettings:JourneyUrlBase"]));
             }).ConfigurePrimaryHttpMessageHandler(() => (clientHandler));
+
+            //AutoMapper
+            services.AddAutoMapper(typeof(TicketMicroservice.AppServices.TicketMapper));
 
             //Newtonsoft add Controller
             services.AddControllers().AddNewtonsoftJson(x =>

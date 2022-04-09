@@ -1,0 +1,12 @@
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.deps.json
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.csproj.AssemblyReference.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.AssemblyInfoInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.AssemblyInfo.cs
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\refint\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\TicketMicroservice.AppServices.Shared.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.AppServices.Shared\obj\Debug\net5.0\ref\TicketMicroservice.AppServices.Shared.dll

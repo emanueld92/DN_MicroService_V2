@@ -162,3 +162,11 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debu
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\TicketMicroservice.Api.pdb
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\TicketMicroservice.Api.genruntimeconfig.cache
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\obj\Debug\net5.0\ref\TicketMicroservice.Api.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\TicketMicroservice.Api\bin\Debug\net5.0\TicketMicroservice.AppServices.Shared.pdb

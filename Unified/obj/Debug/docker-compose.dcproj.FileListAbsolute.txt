@@ -74,3 +74,5 @@ C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\JourneyMicroservice.A
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.AppServices.Shared.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\PassengerMicroservice.AppServices.Shared.pdb
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.AppServices.Shared.dll
+C:\Users\Emanueld92\source\repos\Crud_V2\Unified\bin\Debug\TicketMicroservice.AppServices.Shared.pdb

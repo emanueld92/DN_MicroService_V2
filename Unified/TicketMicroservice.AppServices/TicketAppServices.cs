@@ -7,24 +7,29 @@ using System.Text;
 using System.Threading.Tasks;
 using TicketMicroservice.Core.Entity;
 using TicketMicroservice.EntityFramework.Repository;
+using AutoMapper;
+using TicketMicroservice.Ticket.Dto;
 
 namespace TicketMicroservice.AppServices
 {
     public class TicketAppServices : ITicketAppServices
     {
-        private readonly IRepository<int, Ticket> _repository;
-        public TicketAppServices(IRepository<int, Ticket> repository)
+        private readonly IRepository<int, TicketMicroservice.Core.Entity.Ticket> _repository;
+        private readonly IMapper _mapper;
+        public TicketAppServices(IRepository<int,TicketMicroservice.Core.Entity.Ticket> repository , IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
 
         //Insert
-        public async Task<int> AddTicketAsync(Ticket ticket)
+        public async Task<int> AddTicketAsync(TicketDto ticket)
         {
-            await _repository.AddAsync(ticket);
+            var t = _mapper.Map<TicketMicroservice.Core.Entity.Ticket>(ticket);
+            await _repository.AddAsync(t);
 
-            return ticket.IdTicket;
+            return t.IdTicket;
         }
 
         //Delete
@@ -35,22 +40,25 @@ namespace TicketMicroservice.AppServices
 
         //Update
 
-        public async Task EditTicketAsync(Ticket ticket)
+        public async Task EditTicketAsync(TicketDto ticket)
         {
-            await _repository.UpdateAsync(ticket);
+            var t = _mapper.Map<TicketMicroservice.Core.Entity.Ticket>(ticket);
+
+            await _repository.UpdateAsync(t);
 
         }
 
         //Get ALL
-        public async Task<List<Ticket>> GetTicketAllAsync()
+        public async Task<List<TicketDto>> GetTicketAllAsync()
         {
-
-            return await _repository.GetAll().ToListAsync();
+            var ts= await _repository.GetAll().ToListAsync();
+            List<TicketDto> tickets = _mapper.Map<List<TicketDto>>(ts);
+            return tickets;
         }
         //Get Id
-        public async Task<Ticket> GetTicketAsync(int ticketId)
+        public async Task<TicketDto> GetTicketAsync(int ticketId)
         {
-            return await _repository.GetAsync(ticketId);
+            return _mapper.Map<TicketDto>(await _repository.GetAsync(ticketId));
 
         }
     }
